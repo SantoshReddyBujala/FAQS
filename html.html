@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML IQA</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>HTML IQAS</h1>
+    <h3>1. What are the semantic elements in html5 and what is their use?</h3>
+    <div class="ans-preview">Semantic HTML elements are those that clearly describe their meaning in a human- and
+        machine-readable way. Elements such as header, footer and article are all considered semantic because they
+        accurately describe the purpose of the element and the type of content that is inside them.</div>
+    <div class="code-preview">
+        <span class="code-heading">Semantic HTML elements</span>
+        <pre>&lt;header&gt; &lt;footer&gt; &lt;section&gt; &lt;nav&gt; &lt;article&gt; &lt;aside&gt;</pre>
+    </div>
+    <h3>2. What is the difference between local storage session storage and cookies?</h3>
+    <div class="ans-preview"> <strong> LocalStorage </strong> as it's called it's local storage for your browsers, it
+        can save up to 10MB, <strong> SessionStorage </strong> does the same, but as it's name saying, it's session
+        based and will be deleted after closing your browser, also can save less than LocalStorage, like up to 5MB, but
+        <strong>Cookies </strong> are very tiny data storing in your browser, that can save up 4KB and can be accessed
+        through server or browser both.
+    </div>
+    <div class="code-preview">
+        <code>
+            <pre class="pre-padding">
+<span class="code-heading">Storage example </span>
+
+        localStorage.setItem('familyName', "Bujala"); <span class="comment-color">//Set the value in a local storage object</span>
+        var familyName= localStorage.getItem('familyName'); <span class="comment-color"> //Get the value from storage object</span>
+        console.log(familyName); <span class="comment-color">// Display local storag value</span>
+
+        Console Output> Bujala
+        
+        var rmfName =localStorage.removeItem('familyName'); <span class="comment-color">//Delete the value from local storage object</span>
+        console.log('After Remove', rmfName);
+        localStorage.clear();<span class="comment-color">//Delete all from local storege </span>
+               
+<span class="code-heading">Session Storage example </span>   
+
+        sessionStorage.setItem('name', 'Santosh');<span class="comment-color">//Set the value in a Session Storage object </span>    
+        var data = sessionStorage.getItem('name'); <span class="comment-color">//Get the value from storage object</span>
+        console.log(data);
+        Console Output> Santosh</pre>
+        </code>
+    </div>
+    <h3>3.What is the difference between block level and inline elements?</h3>
+    <div class="ans-preview">
+        A block level elements start with a new line. A block level elements takes 100%/full width. A block level
+        elements has a top and bottom morgins where as inline elements does not.
+    </div>
+    <div class="code-preview">
+        <span class="code-heading">Block level elements</span>
+        <pre>&lt;div&gt; &lt;p&gt; &lt;header&gt; &lt;footer&gt; &lt;section&gt; &lt;nav&gt; &lt;article&gt; &lt;aside&gt; &lt;ol&gt; &lt;ul&gt;</pre>
+        <span class="code-heading">Inline elements</span>
+        <pre>&lt;img&gt; &lt;a&gt; &lt;span&gt; &lt;em&gt; &lt;button&gt; &lt;script&gt; &lt;label&gt; &lt;select&gt; &lt;small&gt; &lt;textarea&gt;</pre>
+    </div>
+    <h3>4.What is the difference between svg and canvas?</h3>
+    <div class="ans-preview display-flex">
+        <div class="display-flex-a">
+            <span class="code-heading">SVG</span>
+            <ul>
+                <li>SVG stands for Scalable Vector Graphics</li>
+                <li>SVG images do not lose their quality when zoomed or resized</li>
+                <li>They can be created and edited with an IDE or text editor</li>
+                <li> They have a small file size and are highy scalable</li>
+            </ul>
+        </div>
+        <div class="display-flex-b">
+            <span class="code-heading">Canvas</span>
+            <ul>
+                <li>The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via JavaScript.</li>
+                <li>The &lt;canvas&gt; element is only a container for graphics. You must use JavaScript to actually
+                    draw the
+                    graphics.</li>
+                <li>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</li>
+            </ul>
+        </div>
+    </div>
+    <h3>5. Enumerate some of the features of html5?</h3>
+    <div class="ans-preview">
+        <span class="code-heading">HTML5 Features</span>
+        <ul>
+            <li>Better error handling</li>
+            <li>Enhanced support for embedding media: &lt;audio&gt; &lt;video&gt;</li>
+            <li>Enhanced support for graphics: &lt;canvas&gt;</li>
+            <li> Multi-device support</li>
+            <li>New:
+                <ul>
+                    <li>Attributes for better document structure, such as &lt;article&gt;, &lt;bdi&gt;,
+                        &lt;figcaption&gt;, and &lt;meter&gt;</li>
+                    <li>Form controls, including &lt;calendar&gt;, &lt;email&gt;, &lt;search&gt;, and &lt;url&gt;</li>
+                    <li>Parsing rules for enhancing flexibility</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h3>6. What do you understand by web workers?</h3>
+    <div class="ans-preview">
+        <legend class="code-heading">Web workers</legend>
+        <p>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.</p>
+        A web worker is a JavaScript that runs in the background, independently of other scripts, withour affecting
+        the
+        performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while
+        the
+        we worker runs in the background.
+    </div>
+    <h3>7. What are the useful API in HTML5?</h3>
+    <div class="ans-preview">
+        <legend class="code-heading">Useful API in HTML5</legend>
+        <ul>
+            <li><strong>Fetch: </strong>Fetch has made Http requests easier than it was with XMLHttpRequest.</li>
+            <li><strong>Battery status: </strong> checks the battery status of the device.</li>
+            <li><strong>Geolocation: </strong>tells the device location.</li>
+            <li><strong>Forms: </strong>new types have been added for validation and rendering.</li>
+            <li><strong>Drag and drop: </strong> easily drag and drop items in the app.</li>
+            <li><strong>Screen orientation:</strong> Checks the device’s screen orientation.</li>
+        </ul>
+    </div>
+
+    <script src="js/html.js" type="text/javascript"></script>
+</body>
+
+</html>
