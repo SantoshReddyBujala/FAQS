@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript FQAS</title>
+        <link href="styles/pagestyles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>JavaScript FQAS</h1>
+        <h3>
+            1. Explain about
+            <em>Hoisting</em>
+            ?
+        </h3>
+        <div class="ans-preview">
+            <span class="code-heading">Hoisting in JavaScript</span>
+            <ul>
+                <li> Hoisting is JavaScript's default behavior of moving declarations to the top.</li>
+                <li>In JavaScript, a variable can be declared after it has been used.</li>
+                <li>In other words; a variable can be used before it has been declared.</li>
+            </ul>
+        </div>
+        <div class="code-preview">
+            <span class="code-heading">Hoisting</span>
+            <pre>
+                // Variable Hoisting
+    function myFun(){
+        x=10;
+        console.log(x);
+        var x;
+    }
+    myFun();
+//Console Output> 10
+
+// Function Hoisting
+    myFun();
+    function myFun(){
+        x=10;
+        console.log(x);
+        var x;
+    }
+//Console Output> 10
+
+// Variable Hoisting
+    function myFun(){
+        console.log(x);
+        var x=10;
+    }
+    myFun();
+//Console Output> undefined
+    myFun();
+    var myfun = function myFun(){
+        x=10;
+        console.log(x);
+        var x;
+    }
+//Console Output> pracjs.js:2 Uncaught ReferenceError: myFun is not defined
+            </pre>
+        </div>
+        <h3>
+            1. Explain about
+            <em>var, let and consts</em>
+            ?
+        </h3>
+        <div class="ans-preview display-flex">
+            <div class="display-flex-x">
+                <span class="code-heading">var</span>
+            </div>
+            <div class="display-flex-y">
+                <span class="code-heading">let</span>
+            </div>
+            <div class="display-flex-z">
+                <span class="code-heading">const</span>
+            </div>
+        </div>
+        <script src="./js/pracjs.js" type="text/javascript"></script>
+    </body>
+</html>

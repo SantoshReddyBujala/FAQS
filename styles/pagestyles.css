@@ -36,6 +36,15 @@ h3{
 .display-flex-b {
     flex: 50%;
 }
+.display-flex-x {
+    flex: 33.3%;
+}
+.display-flex-y {
+    flex: 33.3%;
+}
+.display-flex-z {
+    flex: 33.3%;
+}
 em {
     font-size: 1.5em;
 }
